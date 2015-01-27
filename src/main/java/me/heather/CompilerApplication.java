@@ -11,7 +11,7 @@ public class CompilerApplication {
         RuleSet ruleSet = compiler.compile("application area greater than 3.00\n" +
                 "application includes option GH\n");
         Application application = new Application();
-        application.setArea(7);
+        application.setArea(2);
         application.setOptions(Arrays.asList("HA", "GH"));
         Boolean result = ruleSet.containsBrokenRules(application);
         System.out.println("Broken rules: " + result);

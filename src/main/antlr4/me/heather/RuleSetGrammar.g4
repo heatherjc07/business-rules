@@ -40,7 +40,7 @@ logical_expr
  | specification_expr            # SpecificationExpression
  ;
 
-specification_expr : specification <assoc=right> specification_operand
+specification_expr : specification specification_operand
                     # SpecificationExpressionWithOperator
                 ;
 
